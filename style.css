@@ -36,3 +36,32 @@ h1 {
 .content {
   font-size: 1.5rem;
 }
+@media (min-width: 700px) {
+  p {
+    font-size: large;
+  }
+
+  .cat-ipsum {
+    display: none;
+  }
+}
+@media (min-width: 700px) and (orientation: landscape) {
+  .card p {
+    font-size: 1.2rem;
+  }
+
+  .cat-ipsum {
+    display: block;
+  }
+}
+@media (min-width: 1000px) and (orientation: landscape) {
+  .card p {
+    font-size: 1.4rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+}
